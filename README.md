@@ -1,6 +1,9 @@
 Crisp Boundary Detection
 ================================================
-This is a copied Repo. Original Repo by authors is here: https://github.com/phillipi/crisp-boundaries
+This repo is a MATLAB R2019b version of the `crisp-boundaries` repository. Original Repo by authors is here: https://github.com/phillipi/crisp-boundaries
+
+### Note:
+Due to github push size limitations, one of the files in `/caches/ii_jj_caches` could not be uploaded. Instead you would find a `zip` file in the same directory. Please unzip it after cloning this repositiory. 
 
 This software package implements the method described in:
 
