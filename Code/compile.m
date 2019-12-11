@@ -54,7 +54,7 @@ function [] = compile()
     fprintf('Boundary detection successfully compiled!\n');
     
     %% install ucm segmentation
-    if (ispc)
+    if (ispc==0)
         fprintf('Skipping UCM segmentation (not supported on Windows)');
     else
         [~,E_oriented] = findBoundaries(test_im,type);
@@ -77,7 +77,7 @@ function [] = compile()
     
     %% install evalution
     try % check if pre-compiled binaries work
-        [a,b] = correspondPixels(rand(10), rand(10), 1);
+        correspondPixels;
     catch        
         error(evaluation_error_string);
     end
